@@ -1,0 +1,288 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Lucida Console", monospace;
+}
+
+body{
+  background: url("pic2.jpeg")no-repeat fixed;
+  background-size:cover;
+  background-position: center;
+  width: 100%px;
+  height: 100%px;
+}
+.dark-mode{
+  background: url("pic1.jpeg")no-repeat fixed;
+  background-size:cover;
+  background-position: center;
+  width: 100%px;
+  height: 100%px;
+}
+.menu-bar{
+  background: black;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+}
+.menu-bar ul{
+  display: inline-flex;
+  list-style: none;
+  color: pink;
+
+}
+.menu-bar ul li{
+  width: 160px;
+  margin: 15px;
+  padding: 15px;
+}
+.menu-bar ul li a{
+  text-decoration: none;
+  color: white;
+}
+.active, .menu-bar ul li:hover
+{
+  background: rgb(207, 206, 206, 0.98);
+  border-radius: 3px;
+}
+
+.box{
+  width: auto;
+  height: auto;
+  margin-left: 200px;
+  margin-right: 200px;
+  margin-top: 10px auto;
+  background-color:rgb(207, 206, 206, 0.98);
+  background-position: center;
+}
+.aboutme h1{
+  font-size: 30px;
+  font-weight: 600;
+  color: black;
+  font-family: "Lucida Console", monospace;
+  text-align: center;
+}
+.aboutme h1 ::after{
+  content: "";
+  height: 3px;
+  width: 225px;
+  background-color: black;
+  display: block;
+  margin-top: 50px;  
+}
+.aboutme h2{
+  font-size: 30px;
+  font-weight: 400;
+  color: white;
+  font-family: "Lucida Console", monospace;
+}
+.aboutme h2 ::after{
+  content: "";
+  height: 4px;
+  width: 225px;
+  background-color: white;
+  display: block;
+  margin-top: 50px;  
+
+}
+.aboutme img{
+  margin: auto;
+  display: block;
+  margin-top: 40px;
+  height: 220px;
+  width: 220px;
+  border-radius: 50%;
+
+}
+.stepsmh img{
+  margin: auto;
+
+}
+
+.aboutme p{
+  font-size: 17px;
+  color: #f0ebeb;
+  width: 80%;
+  line-height: 1.5;
+}
+content{
+  font-size: 17px;
+  color: white;
+  width: 80%;
+  line-height: 1.5;
+  font-family: "Lucida Console", monospace;
+}
+aritcle h5{
+  text-transform: uppercase;
+  font-size: 32px;
+  font-weight: 600;
+  margin-top: 30px;
+  color: white;
+
+}
+aritcle p{
+  font-size: 18px;
+  color: white;
+  font-family: "Lucida Console", monospace;
+}
+.socials{
+  color: white;
+  transition: color 0.2s;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 60px;
+}
+.socials :hover{
+  color: white;
+}
+
+video{
+  width: 400px;
+  height: 225px;
+
+
+}
+h5{
+  text-transform: uppercase;
+  font-size: 32px;
+  font-weight: 600;
+  margin-top: 30px;
+  color: white;
+  font-family: "Lucida Console", monospace;
+}
+.box2{
+  width: auto;
+  height: auto;
+  margin-left: 200px;
+  margin-right: 200px;
+  margin-top: 100px auto;
+  background-color: rgb(207, 206, 206, 0.98);
+  background-position: center;
+}
+.flexbox h1{
+  margin-top: 40px;
+  font-size: 30px;
+  font-family: "Lucida Console", monospace;
+}
+.flexbox img{
+  margin: auto;
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  height: 350px;
+  width: 500px;
+  border: 4px solid white;
+}
+.flexbox{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-left: 50px;
+  margin-right: 50px;
+  text-align: justify;
+}
+.stepsmh{
+  display: flex;
+  width: 90%;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: start;
+  margin-left: 60px;
+  padding-bottom: 80px;
+
+}
+.petition{
+  background-color: rgb(207, 206, 206, 0.98);
+}
+.petition-container{
+ display: flex;
+  flex-direction: row;
+  gap: 20px;
+  width: 100;
+  padding-bottom: 50px;
+}
+.petition-para{
+ width: 80%;
+
+}
+.signatures{
+  width: 45%;
+  padding-right: 10px;
+}
+.stepsmh h1{
+  font-size: 30px;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.stepsmh stepnum{
+  font-size: 25px;
+  margin-left: px;
+}
+
+
+.error {
+  border-style: solid;
+  border-width: 2px;
+  border-color: red;
+  background:pink;
+}
+.popup{
+  width: 500px;
+  background-color: rgba(244, 215, 218, 0.96) ;
+  border-radius: 6px;
+  position: absolute;
+  top: 0%;
+  left: 35%;
+  transform: (-50%,-50%)scale(0.1);
+  text-align: center;
+  padding: 0 30px 30px;
+  color: blue; 
+  visibility: hidden;
+  transition: transform 0.5s, top 0.5s;
+}
+.open-popup{
+  visibility: visible;
+  top: 465%;
+  transform: (-50%,-50%)scale(1);
+}
+.popup img{
+  width: 450px;
+  margin-top: 20%;
+  box-shadow: 0 2px 5px rgb(245, 244, 244,0.2);
+}
+.popup button{
+  width: 80%;
+  margin-top: 50px;
+  padding: 10px 0;
+  background-color: pink;
+  color: white;
+  border: 0;
+  outline: none;
+  font-size: 18px;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 0 5px 5px rgb(247, 247, 247,0.2);
+
+}
+
+.section {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.section.in-view {
+  opacity: 1;
+  transform: none;
+}
+.no-scroll-animation {
+  scroll-behavior: auto !important;
+}
+.introduction{
+  background-color: green;
+}
